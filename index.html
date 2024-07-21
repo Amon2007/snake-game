@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="about-me-conteiner">
+        <img src="img/logo.png" alt="GOIT logo" class="logo" />
+        <img src="img/photo.jpg" alt="My photo" width="274" class="my-photo" />
+        <h2 class="my-name">
+          Створено Всеволодом Левчуком, учасником марафону "Веброзробник
+          майбутнього"
+        </h2>
+
+        <ul class="about-me-list">
+          <li class="about-me-list-item">I can help you with your website</li>
+          <li class="about-me-list-item">
+            I look forward to our cooperation with you
+          </li>
+        </ul>
+      </div>
+      <div class="game-conteiner">
+        <h1 class="game-title">Гра “Змійка”</h1>
+        <div class="game-area" style="position: relative">
+          <canvas class="game-canvas" width="400" height="400"></canvas>
+        </div>
+
+        <div class="game-score">Очки: 0</div>
+        <div class="game-controls">
+          <button class="game-start">Старт</button>
+          <button class="game-reset">Перезапуск</button>
+        </div>
+      </div>
+      <div class="instructions-conteiner">
+        <h3 class="instructions-title">Інструкції до гри</h3>
+        <ul class="instructions-list">
+          <li class="instruction-list-item">
+            Використовуйте стрілки на клавіатурі (вліво, вправо, вгору, вниз)
+            для керування рухом змійки. Натискайте стрілку в потрібному
+            напрямку, щоб змінити напрямок руху змійки.
+          </li>
+          <li class="instruction-list-item">
+            Мета гри - збирати їжу, яка з'являється на полі гри. Коли голова
+            змійки зіткнеться з їжею, змійка зростатиме у довжину.
+          </li>
+          <li class="instruction-list-item">
+            Уважно плануйте свої рухи, оскільки гра закінчується, якщо змійка
+            зіткнеться зі стіною або своїм власним тілом.
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/game.js"></script>
+  </body>
+</html>
