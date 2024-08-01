@@ -1,0 +1,217 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #eff5ff;
+}
+
+.my-name {
+  color: #262630;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 20px;
+  margin-bottom: 32px;
+}
+
+.about-me-conteiner {
+  width: 274px;
+}
+
+.logo {
+  margin-bottom: 60px;
+}
+
+.my-photo {
+  border-radius: 15px;
+}
+
+.about-me-list {
+  padding-left: 14px;
+}
+.about-me-list-item {
+  color: #262630;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.game-title {
+  color: #262630;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 60px;
+  margin-top: 0;
+}
+
+.main-container {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 44px;
+  box-sizing: border-box;
+}
+
+.game-conteiner {
+  width: 440px;
+}
+
+.instructions-conteiner {
+  width: 274px;
+}
+
+.game-area {
+  border-radius: 10px;
+  background: #d5e3ff;
+  width: 440px;
+  height: 440px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+}
+.game-canvas {
+  border: 1px solid #9eadf2;
+  background: #fff;
+}
+
+.game-score {
+  color: #262630;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.game-start {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  border-radius: 8px;
+  background: #ff6b0a;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  box-sizing: border-box;
+  border: none;
+  margin-right: 28px;
+  cursor: pointer;
+}
+
+.game-reset {
+  border-radius: 8px;
+  border: 1px solid #ff6b0a;
+  color: #ff6b0a;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  box-sizing: border-box;
+  background: #eff5ff;
+  cursor: pointer;
+}
+
+.game-controls {
+  display: flex;
+  justify-content: center;
+}
+
+.instructions-title {
+  color: #262630;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 32px;
+  margin-top: 90px;
+}
+
+.instructions-list {
+  padding-left: 16px;
+}
+
+.instruction-list-item {
+  color: #262630;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+.game-over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 24px;
+  max-width: 90%;
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+  }
+  .about-me-conteiner {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .instructions-conteiner {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .game-conteiner {
+    width: 100%;
+  }
+
+  .game-area {
+    width: 100%;
+    padding: 10px;
+    height: auto;
+  }
+
+  .game-canvas {
+    width: 100%;
+    height: auto;
+  }
+
+  .game-controls {
+    flex-direction: column; /* Змінено для розташування кнопок одна під одною */
+    gap: 10px; /* Додано для відстані між кнопками */
+  }
+
+  .game-title {
+    font-size: 24px; /* Зменшено розмір тексту заголовку */
+    margin-bottom: 20px; /* Зменшено відстань знизу заголовку */
+  }
+
+  .game-score {
+    font-size: 14px; /* Зменшено розмір тексту */
+  }
+
+  .game-start,
+  .game-reset {
+    width: 100%; /* Кнопки займають всю ширину */
+    padding: 10px 0; /* Змінено внутрішні відступи для кращої адаптації */
+    font-size: 14px; /* Зменшено розмір тексту кнопок */
+  }
+}
